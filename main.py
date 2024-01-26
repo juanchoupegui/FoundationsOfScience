@@ -1,11 +1,13 @@
-number = int(input("Enter a number: "))
+import math
 
-if number > 5:
-    print("Number is larger than 5")
-elif number == 5:
-    print("Number is equal to 5")
-else:
-    print("Number is smaller than 5")
+# number = int(input("Enter a number: "))
+#
+# if number > 5:
+#     print("Number is larger than 5")
+# elif number == 5:
+#     print("Number is equal to 5")
+# else:
+#     print("Number is smaller than 5")
 
 
 n1 = 10
@@ -66,3 +68,31 @@ method(field, 0)
 print(field)
 method(field, 4)
 print(field)
+
+
+def circumference(r):
+    c = 2 * math.pi * r
+    return c
+
+
+# r = int(input("Enter a radius: "))
+# perimeter = circumference()
+# print("The circumference of a circle with radius " + str(r) + " is " + str(perimeter))
+
+# class
+from Address import Address
+
+hans_meier = Address("Hauptstrasse", 4, 34510, "Berlin")
+veronica_stark = Address("Gartenstrasse", 14, 98760, "Munich")
+
+print(hans_meier.get_address())
+print(veronica_stark.get_address())
+
+veronica_stark.set_street("Garden Street")
+print(veronica_stark.get_address())
+
+from Circle import Circle
+
+radius = int(input("Please enter a radius: "))
+radius_circle = Circle(radius)
+print(radius_circle.get_area())
