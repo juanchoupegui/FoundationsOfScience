@@ -79,7 +79,7 @@ def circumference(r):
 # perimeter = circumference()
 # print("The circumference of a circle with radius " + str(r) + " is " + str(perimeter))
 
-# class
+# classes
 from Address import Address
 
 hans_meier = Address("Hauptstrasse", 4, 34510, "Berlin")
